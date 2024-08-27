@@ -1,5 +1,5 @@
 import { findElement } from "./helpers.js";
-
+const Base_URL = "https://66cc9f34a4dd3c8a71b842ed.mockapi.io/api/"
 const elWrapperProducts = findElement(".arzon__big-div");
 const elProductTemplate = findElement("#template");
 const elLoader = findElement("#loader");
@@ -20,7 +20,7 @@ const token = localStorage.getItem("token");
 
 
 async function getProducts() {
-    let products = await fetch(`https://fakestoreapi.com/products?limit=${limit}`);
+    let products = await fetch(Base_URL+"products");
     let data = await products.json();
     elLoader.style.display = "none";
     renderProducts(data);

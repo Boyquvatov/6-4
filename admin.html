@@ -74,17 +74,16 @@
             </div>
         </header>
         <form class="form form-control" id="form-add">
-            <input placeholder="img" name="img" class="form-control mt-3 border-black" type="text" />
+            <input placeholder="image" name="image" class="form-control mt-3 border-black" type="text" />
             <input placeholder="title" name="title" class="form-control mt-3 border-black" type="text" />
-            <input placeholder="real_price" name="real_price" class="form-control mt-3 border-black" type="text" />
-            <input placeholder="discount_price" name="discount_price" class="form-control mt-3 border-black" type="text" />
-            <input placeholder="monthly" name="monthly" class="form-control mt-3 border-black" type="text" />
-            <button id="add-btn" type="button" class="btn btn-primary">Save changes</button>
+            <input placeholder="price" name="price" class="form-control mt-3 border-black" type="text" />
+            <input placeholder="description" name="description" class="form-control mt-3 border-black" type="text" />
+            <input placeholder="rate" name="rate" class="form-control mt-3 border-black" type="text" />
+            <button id="add-btn" type="submit" class="btn btn-primary">Save changes</button>
         </form>
 
         <div id="loader" style=" width: 100%;display: flex; margin: 20px; align-items: center; justify-content: center;">
             <div class="loader">
-                <!-- <span class="sr-only">Loading...</span> -->
             </div>
         </div>
 
@@ -169,6 +168,9 @@
                     <button class="btn btn-danger">
                         O'chirish
                     </button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        O'zgartirish
+                    </button>
                 </div>
             </div>
         </template>
@@ -183,11 +185,11 @@
                     <div class="modal-body">
                         <img src="" id="edit-img" alt="" />
                         <form id="form-edit">
-                            <input placeholder="img" name="img" class="form-control mt-3 border-black" type="text" />
+                            <input placeholder="image" name="image" class="form-control mt-3 border-black" type="text" />
                             <input placeholder="title" name="title" class="form-control mt-3 border-black" type="text" />
-                            <input placeholder="real_price" name="real_price" class="form-control mt-3 border-black" type="text" />
-                            <input placeholder="discount_price" name="discount_price" class="form-control mt-3 border-black" type="text" />
-                            <input placeholder="monthly" name="monthly" class="form-control mt-3 border-black" type="text" />
+                            <input placeholder="price" name="price" class="form-control mt-3 border-black" type="text" />
+                            <input placeholder="description" name="description" class="form-control mt-3 border-black" type="text" />
+                            <input placeholder="rate" name="rate" class="form-control mt-3 border-black" type="text" />
                         </form>
                     </div>
                     <div class="modal-footer">
